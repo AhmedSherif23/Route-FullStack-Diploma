@@ -1,15 +1,13 @@
-# Route-FullStack-Diploma
-The Projects of Full Stack Web Development diploma C43 at Route Academy.
-Main Topics:
+The Assignments of Front-End diploma C42 at Route Academy.
 
-HTML & HTML5
-CSS & CSS3
-Bootstrap
-Font Awesome
-icomoon
-heroicon
-JavaScript
-Swiper-js
-ScrollReveal-js
-Alertify-js
-SweetAlert2
+Main Topics:
+- HTML & HTML5
+- CSS & CSS3
+- Bootstrap
+- TailWind CSS
+- Font Awesome
+- icomoon
+- JavaScript
+- Swiper-js
+- SweetAlert2
+- React
