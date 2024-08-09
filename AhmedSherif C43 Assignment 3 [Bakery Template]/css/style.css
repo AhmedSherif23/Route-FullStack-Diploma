@@ -269,7 +269,7 @@ a {
 }
 
 .contact-details {
-    background: url(/img/contact.png);
+    background: url(img/contact.png);
     background-repeat: no-repeat;
     background-position: 50%;
 }
