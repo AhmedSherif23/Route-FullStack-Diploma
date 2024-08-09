@@ -1,8 +1,7 @@
 // ?=============== HTML ELEMENT ===============
-const assContainer = document.querySelector('#assContainer');
-const miniProjectsContainer = document.querySelector('#miniProjectsContainer');
-const miniProjectsAPIContainer = document.querySelector('#miniProjectsAPIContainer');
-const topicsContainer = document.querySelector('#topicsContainer');
+const routeassiContainer = document.querySelector('#routeassiContainer');
+const ReactProjectsContainer = document.querySelector('#ReactProjectsContainer');
+const examsContainer = document.querySelector('#examsContainer');
 const reactProjectsContainer = document.querySelector('#ReactProjects');
 
 // ^=============== APP VARIABLES ===============
@@ -21,30 +20,14 @@ let assignmentsList = [
     { title: 'Assignment-10 [Login JS & LocalStorage]', demo: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/index.html', img: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/output.png', codeURL },
     { title: 'Assignment-11 [Weather App JS]', demo: './AhmedSherif C43 Assignment 11 [Weather App JS]/index.html', img: './AhmedSherif C43 Assignment 11 [Weather App JS]/output.png', codeURL },
     { title: 'Assignment-12 [Party Event jQuery]', demo: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/index.html', img: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/output.png', codeURL },
+];
+let examsList = [
     { title: 'Bootstrap-Exam [Daniels Template]', demo: './AhmedSherif C43 Exam 1 [Daniels]/index.html', img: './AhmedSherif C43 Exam 1 [Daniels]/output.png', codeURL },
-    { title: 'JavaScript & jQuery-Exam [Yummy]', demo: './AhmedSherif C43 Exam 2 [Yummy]/index.html', img: './AhmedSherif C43 Exam 2 [Yummy]/output.png', codeURL },
+    { title: 'JavaScript & jQuery-Exam [Yummy]', demo: './AhmedSherif C43 Exam 2 [Yummy]/index.html', img: './AhmedSherif C43 Exam 2 [Yummy]/output.png', codeURL },,
 ];
-let otherTopicsList = [
-    { title: 'Bootstrap-Exam [Daniels Template]', demo: './Bootstrap-Exam [Daniels Template]/index.html', img: './Bootstrap-Exam [Daniels Template]/output.png', codeURL },
-    { title: 'JavaScript & jQuery-Exam [Yummy]', demo: './JavaScript & jQuery-Exam [Yummy]/index.html', img: './JavaScript & jQuery-Exam [Yummy]/output.png', codeURL },
-    { title: '[Tempo-Template]', demo: './[Tempo-Template]/index.html', img: './[Tempo-Template]/output.png', codeURL },
-    { title: 'CSS Tricks [Create An Equal Height Bootstrap-5 Cols]', demo: './CSS Tricks [Create An Equal Height Bootstrap-5 Cols]/index.html', img: './CSS Tricks [Create An Equal Height Bootstrap-5 Cols]/output.png', codeURL },
-    { title: 'CSS Tricks [Gradient tricks]', demo: './CSS Tricks [Gradient tricks]/index.html', img: './CSS Tricks [Gradient tricks]/output.png', codeURL },
-];
-let miniProjectList = [
-    { title: 'MiniProjectJS [CaptchaGenJS]', demo: './MiniProjectJS [CaptchaGenJS]/index.html', img: './MiniProjectJS [CaptchaGenJS]/output.png', codeURL },
-    { title: 'MiniProjectJS [RGB GameJS]', demo: './MiniProjectJS [RGB GameJS]/index.html', img: './MiniProjectJS [RGB GameJS]/output.png', codeURL },
-    { title: 'MiniProjectJS [SliderJS]', demo: './MiniProjectJS [SliderJS]/index.html', img: './MiniProjectJS [SliderJS]/output.png', codeURL },
-];
-let miniProjectAPIList = [
-    { title: '01- Check Internet Connection JS', demo: './MiniProjectJS with API [Check Internet Connection JS]/index.html', img: './MiniProjectJS with API [Check Internet Connection JS]/output.png', codeURL },
-    { title: '02- QR Code Generator JS', demo: './MiniProjectJS with API [QR Code Generator JS]/index.html', img: './MiniProjectJS with API [QR Code Generator JS]/output.png', codeURL },
-    { title: '03- QR Code Reader JS', demo: './MiniProjectJS with API [QR Code Reader JS]/index.html', img: './MiniProjectJS with API [QR Code Reader JS]/output.png', codeURL },
-];
+
 let assignmentsReact = [
     { title: '01- START FRAMEWORK', demo: 'https://start-framework-beryl.vercel.app/', img: './ReactJS-01 [START FRAMEWORK]/output.png', codeURL: "https://github.com/HassanEssam0110/Start-Framework" },
-    { title: '02- FreshCart E-commerce', demo: 'https://fresh-cart-ecommerce-three.vercel.app/', img: './ReactJS-02 [FreshCart E-commerce]/output.png', codeURL: "https://github.com/HassanEssam0110/FreshCart-ecommerce" },
-    { title: '03- Notes App', demo: 'https://note-app-react-js-two.vercel.app/', img: './ReactJS-03 [Notes App]/output.png', codeURL: "https://github.com/HassanEssam0110/noteApp-ReactJS" },
 ];
 
 // ^=============== JS FUNCTIONS ===============
@@ -75,8 +58,6 @@ function display(conteniarEl, list) {
     conteniarEl.innerHTML = contant;
 }
 
-display(assContainer, assignmentsList);
-display(miniProjectsAPIContainer, miniProjectAPIList);
-display(miniProjectsContainer, miniProjectList);
-display(topicsContainer, otherTopicsList);
+display(routeassiContainer, assignmentsList);
+display(examsContainer, examsList);
 display(reactProjectsContainer, assignmentsReact);
