@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description"
+        content="This is the Route FrontEnd Diploma webpage showcasing assignments, mini projects, and other topics.">
+    <meta name="keywords" content="Route FrontEnd Diploma, assignments, mini projects, web development">
+    <meta name="author" content="Ahmed Sherif">
+    <meta property="og:title" content="Route FrontEnd Diploma">
+    <meta property="og:description"
+        content="This is the Route FrontEnd Diploma webpage showcasing assignments, mini projects, and other topics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hassanessam0110.github.io/Route-FrontEnd-Diploma/">
+    <!-- *====== Google Fonts ====== -->
+    <link href="https://fonts.googleapis.com/css?family=Alata|Roboto&display=swap" rel="stylesheet" />
+    <!-- *====== Bootstrap CSS ====== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- *====== Font-awesome CSS ====== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- *====== Main CSS ====== -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Route FrontEnd Diploma</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent">
+    <!-- ^======  NavBar ====== -->
+    <nav class="navbar navbar-expand-md py-3 position-fixed w-100 top-0 z-3">
+        <div class="container d-flex align-items-center">
+            <a class="navbar-brand" href="#">H.Essam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-ellipsis-vertical navbar-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-center active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#assignments">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ^======  Hero Section ====== -->
+    <header id="home" class="hero pt-5  d-flex justify-content-center align-items-center ">
+        <div class="container h-100  d-flex flex-column justify-content-center align-items-center">
+            <div class="main-head">
+                <h1 class="text-center mb-4">FrontEnd Diploma Route Academy</h1>
+            </div>
+            <p class="text-center">Explore my Frontend journey at Route Academy through a showcase of assignments and
+                projects. See hands-on work in HTML, CSS, and JavaScript, reflecting technical skills and
+                problem-solving abilities. Each project is a testament to practical application and gained knowledge.
+                Join me on this visual journey defining my learning experience!</p>
+        </div>
+    </header>
+    <!-- ^====== Route Assignments ====== -->
+    <section id="assignments" class="container py-5 ">
+        <div class="secondary-head ">
+            <h2 class="fs-5">Route Assignments</h2>
+        </div>
+        <div id="assContainer" class="row my-4 gx-4 gy-4 ">
+        </div>
+    </section>
+    <div class="parallax parallax-1"></div>
+    <!-- ^====== Route Assignments React ====== -->
+    <section id="Projects" class="container py-5 ">
+        <div class="secondary-head">
+            <h2 class="fs-5">React Projects</h2>
+        </div>
+        <div id="ReactProjects" class="row my-4 gx-4 gy-4 ">
+        </div>
+    </section>
+
+    <!-- ^====== Other Topics ====== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="secondary-head">
+                <h2 class="fs-5">Other Topics</h2>
+            </div>
+            <div id="topicsContainer" class="row my-4 gx-4 gy-4"></div>
+        </div>
+    </section>
+    <div class="parallax parallax-1"></div>
+    <!-- ^====== Mini Project JS With API ====== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="secondary-head">
+                <h2 class="fs-5">Mini Project JS With API</h2>
+            </div>
+            <div id="miniProjectsAPIContainer" class="row my-4 gx-4 gy-4 "></div>
+        </div>
+    </section>
+    <!-- ^====== Mini Project JS ====== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="secondary-head">
+                <h2 class="fs-5">Mini Project JS</h2>
+            </div>
+            <div id="miniProjectsContainer" class="row my-4 gx-4 gy-4"></div>
+        </div>
+    </section>
+
+
+    <!-- *====== Font-awesome JS ====== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- *====== Bootstrap JS ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- *====== Main JS ====== -->
+    <script src="./assets/index.js"></script>
+
+</body>
+
+</html>

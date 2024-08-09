@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    margin: 0;
+    min-height: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    color: #27b9c2;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+
+.caps {
+    font-family: "Montserrat", sans-serif;
+    color: #9fa3a7;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.grey-text {
+    color: #9fa3a7;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "g1 g2 g3 g3"
+      "g4 g5 g6 g7"
+      "g8 g9 g9 g7"
+      "g10 g11 g12 g12";
+  }
+
+.g1 {
+    grid-area: g1;
+    margin-left: 60px;
+    margin-top: 140px;
+    padding-top: 20px;
+}
+
+.g2 {
+    grid-area: g2;
+}
+
+.g2 img {
+    margin-top: 150px;
+    width: 250px;
+    margin-left: 100px;
+}
+
+.g3 {
+    background-color: #f7f8f9;
+    grid-area: g3;
+    text-align: center;
+}
+
+.heading {
+    font-family: "Arvo", sans-serif;
+    margin-bottom: 10px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 43.2px;
+}
+
+.center {
+    margin-top: 50px;
+}
+
+.g4 {
+    background-color: #f05638;
+    color: #fffbfb;
+    grid-area: g4;
+    text-align: center;
+}
+
+.g4 > a {
+    color: #ffc80a;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.g4 > img {
+    margin-top: 70px;
+    width: 320px;
+}
+
+.g5 {
+    grid-area: g5;
+}
+
+.g5 > img {
+    width: 450px;
+    margin-left: -150px;
+    margin-top: 90px;
+}
+
+.g5 > div {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.g5 > h3 {
+    padding-top: 40px;
+    margin: auto;
+    display: block;
+    max-width: 160px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.g6 {
+    grid-area: g6;
+    color: #9fa3a7;
+}
+
+.g6 > div {
+    margin-top: 60px;
+    font-weight: 100;
+    line-height: 1.8;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.g6 > a,
+.arrow {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #27b9c2;
+}
+
+.g7 {
+    background-color: #8f76bc;
+    color: #fff;
+    grid-area: g7;
+    text-align: center;
+}
+
+.g7 > h2 {
+    font-size: 36.8px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+    background-color: #8166b0;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.icloud-text {
+    font-size: 14.4px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 2px;
+    vertical-align: baseline;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-color: hsla(0, 0%, 100%, .08);
+    width: 120px;
+    height: 20px;
+    border-radius: 8px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 105px;
+}
+
+.icloud-text2 {
+    text-align: center;
+    width: 300px;
+    line-height: 1.8;
+    font-size: 19.2px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.btn {
+    border-radius: 50px;
+    background-color: #ffc80a;
+    padding: 14px 20px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: black;
+    color: #ffc80a;
+    transition: 0.5s ease-out;
+}
+
+.white {
+    color: white;
+    font-size: 16px;
+}
+
+.circle > img {
+    width: 230px;
+    margin-top: 20px;
+}
+
+.g8 {
+    background-color: #f7f8f9;
+    grid-area: g8;
+    text-align: center;
+}
+
+.g8 > img {
+    margin-right: 25px;
+    margin-top: 70px;
+    width: 248px;
+}
+
+.g9 {
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-color: #93b6b7;
+    grid-area: g9;
+    text-align: center;
+    color: white;
+}
+
+.g9 > img {
+    width: 700px;
+    margin-top: 40px;
+}
+
+.g9 > h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 120px;
+    padding-top: 20px;
+}
+
+.mini-caps {
+    float: left;
+    border-radius: 5px;
+    background-color: #fa684f;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 20px;
+    font-size: 11.2px;
+
+}
+
+.g10 {
+    text-align: center;
+    background-color: #35cfed;
+    color: #fff;
+    grid-area: g10;
+}
+
+.twitter-container {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    margin: auto;
+    display: block;
+    background-color: #4a50520e;
+    text-align: center;
+}
+
+.twitter-container > img {
+    width: 44px;
+    margin-top: 100px;
+}
+
+.g11 {
+    background-color: #f7f8f9;
+    grid-area: g11;
+    text-align: center;
+}
+
+.g11 > div {
+    margin-left: 40%;
+    margin-top: 100px;
+    color: white;
+    background-color: #7bc424;
+}
+
+.g11 > h3 {
+    margin-top: 130px;
+    font-size: 25.6px;
+}
+
+.g12 {
+    background-color: #2c2c2c;
+    color: #fff;
+    grid-area: g12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g12 > h3 {
+    margin-left: 100px;
+    font-size: 25.6px;
+}
+
+.g12 > img {
+    width: 270px;
+}
+
+@media (max-width: 680px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'g3'
+            'g1'
+            'g2'
+            'g4'
+            'g8'
+            'g5'
+            'g6'
+            'g10'
+            'g9'
+            'g7'
+            'g7'
+            'g11'
+            'g12';
+    }
+}

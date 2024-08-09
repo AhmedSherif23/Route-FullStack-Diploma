@@ -1,0 +1,315 @@
+
+/* General use */
+.inline {
+    display: inline-block;
+}
+.float {
+    float: left;
+}
+
+ul {
+    list-style: none;
+}
+
+.clr {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Header Section CSS */
+
+.header {
+    background-image: url(/img/home.jpg);
+    background-size: 100% 100%;
+    height: 91%;
+}
+
+.logo img {
+    width: 250px;
+    padding-left: 11%;
+    padding-top: 2%;
+}
+
+.links {
+    padding-left: 62%;
+    margin-top: -2.5%;
+}
+
+.links ul {
+    display: inline-block;
+}
+
+.links a {
+    color: white;
+    font-size: 20px;
+}
+.links li {
+    padding-left: 15px;
+}
+ .content {
+    text-align: center;
+    padding-top: 10%;
+ }
+
+ .content p {
+    font-size: 25px;
+    padding: 20px;
+    color: white;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: white;
+    padding: 10px;
+}
+
+.brown-button {
+    border: none;
+    background-color: rgb(125, 81, 47);
+    border-radius: 5px;
+    padding: 20px 27px;
+    color: #fff;
+}
+
+.white-button {
+    border: white solid 2px;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 20px 27px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.btn {
+    padding-top: 40px;
+}
+
+/* About section */
+
+.aboutus {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+}
+
+.about-img {
+    display: inline-block;
+    width: 30%;
+    padding-left: 14%;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-content {
+    display: inline-block;
+    padding-left: 3%;
+    vertical-align: top;
+    padding-top: 3%;
+}
+
+.about-content p {
+    color: rgb(104, 104, 104);
+    padding-top: 40px;
+    line-height: 30px;
+}
+
+.about-list {
+    float: left;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.about-list li {
+    margin-top: 20px;
+    color: rgb(104, 104, 104);
+}
+
+/* Location-section */
+
+.location {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+}
+
+.location-img {
+    display: inline-block;
+    width: 30%;
+    margin-left: 50%;
+}
+
+.location-img img {
+    width: 100%;
+}
+
+.location-content {
+    width: 50%;
+    display: inline-block;
+    padding-left: 13%;
+    vertical-align: top;
+    margin-top: -20%;
+}
+
+.location-content p {
+    color: rgb(104, 104, 104);
+    padding-top: 40px;
+    line-height: 30px;
+}
+
+/* our-baking-section */
+
+.our-baking {
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+
+
+.location-sectitle {
+    text-align: center;
+}
+
+.our-baking p {
+    color: rgb(104, 104, 104);
+    padding: 25px;
+    padding-bottom: 70px;
+    line-height: 25px;
+}
+
+.our-baking h3 {
+    margin-top: 15px;
+}
+
+.baking-item {
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+.baking-item img {
+    width: 90%;
+}
+
+/* contact section  */
+
+.contact {
+    background-color: #f8f8f8;
+}
+
+.contact-content {
+    width: 50%;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+.contact-content {
+    text-align: left;
+    line-height: 30px;
+    color: rgb(104, 104, 104);
+}
+
+.contact-content h2 {
+    color: black;
+}
+
+.contact-details {
+    color: rgb(104, 104, 104);
+}
+
+.contact-details p {
+    float: left;
+    padding-top: 22px;
+}
+
+.contact-details li {
+    margin-top: 30px;
+}
+
+.contact-map {
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+/* Information-section */
+.information {
+    background-color: #403D38;
+    height: 400px;
+}
+
+.information h3 {
+    color: #fff;
+}
+
+.about-us,
+.why-special,
+.opening-hours,
+.contact-details {
+    width: 22%;
+    float: left;
+    padding: 20px;
+    padding-bottom: 120px;
+    color: rgb(150, 150, 150);
+    line-height: 25px;
+}
+
+.contact-details {
+    background: url(/img/contact.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.information li {
+    border-bottom: 1px solid rgba(121, 121, 121, 0.192);
+    padding: 10px;
+    list-style: none;
+}
+
+.information a {
+    color: rgb(150, 150, 150);
+}
+
+/* footer section */
+
+.footer {
+    background-color: #353330;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer img {
+    width: 20%;
+}
+
+.footer p {
+    color: rgb(150, 150, 150);
+    font-size: 14px;
+}
+
+.icons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #6b6863;
+}
+
+.icons img {
+    width: 80%;
+}
