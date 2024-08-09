@@ -6,7 +6,7 @@ const topicsContainer = document.querySelector('#topicsContainer');
 const reactProjectsContainer = document.querySelector('#ReactProjects');
 
 // ^=============== APP VARIABLES ===============
-let codeURL = 'https://github.com/HassanEssam0110/Route-FrontEnd-Diploma';
+let codeURL = 'https://https://github.com/AhmedSherif23/Route-FullStack-Diploma';
 
 let assignmentsList = [
     { title: 'Assignment-01 [First HTML]', demo: './Assignment-01 [First HTML]/index.html', img: './Assignment-01 [First HTML]/output.png', codeURL },
