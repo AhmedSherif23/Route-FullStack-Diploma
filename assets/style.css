@@ -164,10 +164,10 @@ h1 em {
 }
 /* Start Hero */
 .hero {
-  min-height: 700px;
+  min-height: 580px;
   background: url("./img/bg-hero.jpg") no-repeat center center;
-  background-size:contain;
-  background-size: 2000px 600px;
+  /* background-size:contain; */
+  background-size: 2000px 500px;
   font-family: "Alata", sans-serif;
   position: relative;
   z-index: 2;
