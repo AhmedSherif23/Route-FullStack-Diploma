@@ -4,7 +4,7 @@ const examsContainer = document.querySelector('#examsContainer');
 const reactProjectsContainer = document.querySelector('#ReactProjects');
 
 // ^=============== APP VARIABLES ===============
-let codeURL = 'https://https://github.com/AhmedSherif23/Route-FullStack-Diploma';
+let codeURL = 'https://github.com/AhmedSherif23/Route-FullStack-Diploma';
 
 let assignmentsList = [
     { title: 'Assignment-01 [First HTML]', demo: './AhmedSherif C43 Assignment 1 [First HTML]/index.html', img: './AhmedSherif C43 Assignment 1 [First HTML]/output.png', codeURL },
