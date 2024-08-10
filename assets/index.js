@@ -1,6 +1,5 @@
 // ?=============== HTML ELEMENT ===============
 const routeassiContainer = document.querySelector('#routeassiContainer');
-const ReactProjectsContainer = document.querySelector('#ReactProjectsContainer');
 const examsContainer = document.querySelector('#examsContainer');
 const reactProjectsContainer = document.querySelector('#ReactProjects');
 
@@ -27,7 +26,7 @@ let examsList = [
 ];
 
 let assignmentsReact = [
-    { title: '01- START FRAMEWORK', demo: 'https://start-framework-seven-tau.vercel.app/about', img: './AhmedSherif C43 React Assignment 1 [Start FrameWork]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20React%20Assignment%201%20%5BStart%20FrameWork%5D" },
+    { title: 'START FRAMEWORK', demo: 'https://start-framework-seven-tau.vercel.app/about', img: './AhmedSherif C43 React Assignment 1 [Start FrameWork]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20React%20Assignment%201%20%5BStart%20FrameWork%5D" },
 ];
 
 // ^=============== JS FUNCTIONS ===============
