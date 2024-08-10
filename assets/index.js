@@ -27,7 +27,7 @@ let examsList = [
 ];
 
 let assignmentsReact = [
-    { title: '01- START FRAMEWORK', demo: 'https://start-framework-beryl.vercel.app/', img: './ReactJS-01 [START FRAMEWORK]/output.png', codeURL: "https://github.com/HassanEssam0110/Start-Framework" },
+    { title: '01- START FRAMEWORK', demo: 'https://start-framework-seven-tau.vercel.app/about', img: './AhmedSherif C43 React Assignment 1 [Start FrameWork]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20React%20Assignment%201%20%5BStart%20FrameWork%5D" },
 ];
 
 // ^=============== JS FUNCTIONS ===============
