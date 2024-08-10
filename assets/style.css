@@ -22,7 +22,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(0, 4, 255);
+  background: rgb(0, 132, 223);
   border-radius: 70px;
 }
 
@@ -130,12 +130,14 @@ h1 em {
 .navbar {
   background-color: #012136;
   color: #ffffff;
-  border-bottom: 1px solid rgba(255, 0, 0, 0.2);
 }
 .navbar-brand {
   font-family: "Alata", sans-serif;
   color: #fff;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-family: emoji;
+  font-size: 30px;
+  text-shadow: 5px 5px #0c2f53;
 }
 .nav-link {
   font-family: "Roboto", sans-serif;
@@ -151,7 +153,7 @@ h1 em {
 }
 .nav-link:focus,
 .nav-link:hover {
-  color: #ccc;
+  color: #3e79af;
 }
 .navbar-toggler {
   border: none;
@@ -188,7 +190,7 @@ h1 em {
 .hero::after {
   content: "";
   position: absolute;
-  background: rgba(17, 56, 105, 0.8);
+  background: rgba(1, 33, 54, 0.6);
   width: 100%;
   height: 100%;
   top: 0;
