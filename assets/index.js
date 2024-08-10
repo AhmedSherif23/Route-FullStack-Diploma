@@ -8,9 +8,9 @@ let codeURL = 'https://github.com/AhmedSherif23/Route-FullStack-Diploma';
 
 let assignmentsList = [
     { title: 'Assignment-01 [First HTML]', demo: './AhmedSherif C43 Assignment 1 [First HTML]/index.html', img: './AhmedSherif C43 Assignment 1 [First HTML]/output.png', codeURL },
-    { title: 'Assignment-02 [User Form]', demo: '././AhmedSherif C43 Assignment 2 [UserForm]/index.html', img: './AhmedSherif C43 Assignment 2 [UserForm]/output.png' },
+    { title: 'Assignment-02 [User Form]', demo: '././AhmedSherif C43 Assignment 2 [UserForm]/index.html', img: './AhmedSherif C43 Assignment 2 [UserForm]/output.png', codeURL },
     { title: 'Assignment-03 [Bakery Template]', demo: './AhmedSherif C43 Assignment 3 [Bakery Template]/index.html', img: './AhmedSherif C43 Assignment 3 [Bakery Template]/output.png', codeURL },
-    { title: 'Assignment-04 [Fokir Template]', demo: './AhmedSherif C43 Assignment 4 [Fokir]/index.html', img: './AhmedSherif C43 Assignment 4 [Fokir]/output.png' },
+    { title: 'Assignment-04 [Fokir Template]', demo: './AhmedSherif C43 Assignment 4 [Fokir]/index.html', img: './AhmedSherif C43 Assignment 4 [Fokir]/output.png', codeURL },
     { title: 'Assignment-05 [Mealify Template]', demo: './AhmedSherif C43 Assignment 5 [Mealify]/index.html', img: './AhmedSherif C43 Assignment 5 [Mealify]/output.png', codeURL },
     { title: 'Assignment-06 [DevFolio Template]', demo: './AhmedSherif C43 Assignment 6 [DevFolio]/index.html', img: './AhmedSherif C43 Assignment 6 [DevFolio]/output.png', codeURL },
     { title: 'Assignment-07 [First JS]', demo: './AhmedSherif C43 Assignment 7 [First JS]/index.html', img: './AhmedSherif C43 Assignment 7 [First JS]/output.png', codeURL },
