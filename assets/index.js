@@ -22,7 +22,7 @@ let assignmentsList = [
 ];
 let examsList = [
     { title: 'Bootstrap-Exam [Daniels Template]', demo: './AhmedSherif C43 Exam 1 [Daniels]/index.html', img: './AhmedSherif C43 Exam 1 [Daniels]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Exam%201%20%5BDaniels%5D" },
-    { title: 'JavaScript & jQuery-Exam [Yummy]', demo: './AhmedSherif C43 Exam 2 [Yummy]/index.html', img: './AhmedSherif C43 Exam 2 [Yummy]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Exam%202%20%5BYummy%5D" },,
+    { title: 'JavaScript & jQuery-Exam [Yummy]', demo: './AhmedSherif C43 Exam 2 [Yummy]/index.html', img: './AhmedSherif C43 Exam 2 [Yummy]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Exam%202%20%5BYummy%5D" },
 ];
 
 let assignmentsReact = [
