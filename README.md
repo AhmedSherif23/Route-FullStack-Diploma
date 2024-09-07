@@ -1,4 +1,4 @@
-The Assignments of Front-End diploma C42 at Route Academy.
+The Assignments of MERN Full Stack Diploma C43 at Route Academy.
 
 Main Topics:
 - HTML & HTML5
@@ -11,5 +11,6 @@ Main Topics:
 - Swiper-js
 - SweetAlert2
 - React
+- Node.js
 
 https://ahmedsherif23.github.io/Route-FullStack-Diploma/
