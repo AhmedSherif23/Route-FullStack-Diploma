@@ -7,22 +7,22 @@ const reactProjectsContainer = document.querySelector('#ReactProjects');
 let codeURL = 'https://github.com/AhmedSherif23/Route-FullStack-Diploma';
 
 let assignmentsList = [
-    { title: 'Assignment-01 [First HTML]', demo: './AhmedSherif C43 Assignment 1 [First HTML]/index.html', img: './AhmedSherif C43 Assignment 1 [First HTML]/output.png', codeURL },
-    { title: 'Assignment-02 [User Form]', demo: '././AhmedSherif C43 Assignment 2 [UserForm]/index.html', img: './AhmedSherif C43 Assignment 2 [UserForm]/output.png', codeURL },
-    { title: 'Assignment-03 [Bakery Template]', demo: './AhmedSherif C43 Assignment 3 [Bakery Template]/index.html', img: './AhmedSherif C43 Assignment 3 [Bakery Template]/output.png', codeURL },
-    { title: 'Assignment-04 [Fokir Template]', demo: './AhmedSherif C43 Assignment 4 [Fokir]/index.html', img: './AhmedSherif C43 Assignment 4 [Fokir]/output.png', codeURL },
-    { title: 'Assignment-05 [Mealify Template]', demo: './AhmedSherif C43 Assignment 5 [Mealify]/index.html', img: './AhmedSherif C43 Assignment 5 [Mealify]/output.png', codeURL },
-    { title: 'Assignment-06 [DevFolio Template]', demo: './AhmedSherif C43 Assignment 6 [DevFolio]/index.html', img: './AhmedSherif C43 Assignment 6 [DevFolio]/output.png', codeURL },
-    { title: 'Assignment-07 [First JS]', demo: './AhmedSherif C43 Assignment 7 [First JS]/index.html', img: './AhmedSherif C43 Assignment 7 [First JS]/output.png', codeURL },
-    { title: 'Assignment-08 [Random Quote JS & JSON]', demo: './AhmedSherif C43 Assignment 8 [Quote JS&JSON]/index.html', img: './AhmedSherif C43 Assignment 8 [Quote JS&JSON]/output.png', codeURL },
-    { title: 'Assignment-09 [Bookmarker JS & LocalStorage]', demo: './AhmedSherif C43 Assignment 9 [BookMarker JS&LocalStorage]/index.html', img: './AhmedSherif C43 Assignment 9 [BookMarker JS&LocalStorage]/output.png', codeURL },
-    { title: 'Assignment-10 [Login JS & LocalStorage]', demo: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/index.html', img: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/output.png', codeURL },
-    { title: 'Assignment-11 [Weather App JS]', demo: './AhmedSherif C43 Assignment 11 [Weather App JS]/index.html', img: './AhmedSherif C43 Assignment 11 [Weather App JS]/output.png', codeURL },
-    { title: 'Assignment-12 [Party Event jQuery]', demo: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/index.html', img: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/output.png', codeURL },
+    { title: 'Assignment-01 [First HTML]', demo: './AhmedSherif C43 Assignment 1 [First HTML]/index.html', img: './AhmedSherif C43 Assignment 1 [First HTML]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%201%20%5BFirst%20HTML%5D" },
+    { title: 'Assignment-02 [User Form]', demo: '././AhmedSherif C43 Assignment 2 [UserForm]/index.html', img: './AhmedSherif C43 Assignment 2 [UserForm]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%202%20%5BUserForm%5D" },
+    { title: 'Assignment-03 [Bakery Template]', demo: './AhmedSherif C43 Assignment 3 [Bakery Template]/index.html', img: './AhmedSherif C43 Assignment 3 [Bakery Template]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%203%20%5BBakery%20Template%5D" },
+    { title: 'Assignment-04 [Fokir Template]', demo: './AhmedSherif C43 Assignment 4 [Fokir]/index.html', img: './AhmedSherif C43 Assignment 4 [Fokir]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%204%20%5BFokir%5D" },
+    { title: 'Assignment-05 [Mealify Template]', demo: './AhmedSherif C43 Assignment 5 [Mealify]/index.html', img: './AhmedSherif C43 Assignment 5 [Mealify]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%205%20%5BMealify%5D" },
+    { title: 'Assignment-06 [DevFolio Template]', demo: './AhmedSherif C43 Assignment 6 [DevFolio]/index.html', img: './AhmedSherif C43 Assignment 6 [DevFolio]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%206%20%5BDevFolio%5D" },
+    { title: 'Assignment-07 [First JS]', demo: './AhmedSherif C43 Assignment 7 [First JS]/index.html', img: './AhmedSherif C43 Assignment 7 [First JS]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%207%20%5BFirst%20JS%5D" },
+    { title: 'Assignment-08 [Random Quote JS & JSON]', demo: './AhmedSherif C43 Assignment 8 [Quote JS&JSON]/index.html', img: './AhmedSherif C43 Assignment 8 [Quote JS&JSON]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%208%20%5BQuote%20JS%26JSON%5D" },
+    { title: 'Assignment-09 [Bookmarker JS & LocalStorage]', demo: './AhmedSherif C43 Assignment 9 [BookMarker JS&LocalStorage]/index.html', img: './AhmedSherif C43 Assignment 9 [BookMarker JS&LocalStorage]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%209%20%5BBookMarker%20JS%26LocalStorage%5D" },
+    { title: 'Assignment-10 [Login JS & LocalStorage]', demo: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/index.html', img: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2010%20%5BLogin%20JS%20%26%20LocalStorage%5D" },
+    { title: 'Assignment-11 [Weather App JS]', demo: './AhmedSherif C43 Assignment 11 [Weather App JS]/index.html', img: './AhmedSherif C43 Assignment 11 [Weather App JS]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2011%20%5BWeather%20App%20JS%5D" },
+    { title: 'Assignment-12 [Party Event jQuery]', demo: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/index.html', img: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2012%20%5BParty%20Event%20jQuery%5D" },
 ];
 let examsList = [
-    { title: 'Bootstrap-Exam [Daniels Template]', demo: './AhmedSherif C43 Exam 1 [Daniels]/index.html', img: './AhmedSherif C43 Exam 1 [Daniels]/output.png', codeURL },
-    { title: 'JavaScript & jQuery-Exam [Yummy]', demo: './AhmedSherif C43 Exam 2 [Yummy]/index.html', img: './AhmedSherif C43 Exam 2 [Yummy]/output.png', codeURL },,
+    { title: 'Bootstrap-Exam [Daniels Template]', demo: './AhmedSherif C43 Exam 1 [Daniels]/index.html', img: './AhmedSherif C43 Exam 1 [Daniels]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Exam%201%20%5BDaniels%5D" },
+    { title: 'JavaScript & jQuery-Exam [Yummy]', demo: './AhmedSherif C43 Exam 2 [Yummy]/index.html', img: './AhmedSherif C43 Exam 2 [Yummy]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Exam%202%20%5BYummy%5D" },,
 ];
 
 let assignmentsReact = [
