@@ -16,6 +16,10 @@ let projectsList = [
         demo: '#',
         codeURL: '#',
     },
+];
+
+// --- Assignments ---
+let assignmentsList = [
     {
         title: 'Start Framework',
         desc: 'A React portfolio template built with Bootstrap and smooth animations.',
@@ -32,10 +36,6 @@ let projectsList = [
         demo: 'https://fresh-cart-gamma-five.vercel.app/',
         codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20React%20Exam%20-%20Fresh%20Cart',
     },
-];
-
-// --- Assignments ---
-let assignmentsList = [
     { title: 'First HTML', desc: 'My first HTML page', demo: './AhmedSherif C43 Assignment 1 [First HTML]/index.html', img: './AhmedSherif C43 Assignment 1 [First HTML]/output.png', tags: ['HTML'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%201%20%5BFirst%20HTML%5D' },
     { title: 'User Form', desc: 'HTML user form exercise', demo: './AhmedSherif C43 Assignment 2 [UserForm]/index.html', img: './AhmedSherif C43 Assignment 2 [UserForm]/output.png', tags: ['HTML', 'Forms'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%202%20%5BUserForm%5D' },
     { title: 'Bakery Template', desc: 'A bakery landing page', demo: './AhmedSherif C43 Assignment 3 [Bakery Template]/index.html', img: './AhmedSherif C43 Assignment 3 [Bakery Template]/output.png', tags: ['HTML', 'CSS'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%203%20%5BBakery%20Template%5D' },
