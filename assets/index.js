@@ -62,7 +62,7 @@ function renderCards(container, list) {
                     <i class="fa-solid ${item.icon || 'fa-star'} featured-icon"></i>
                     <div class="project-overlay">
                         <a href="${item.demo}" target="_blank"><i class="fa-solid fa-link"></i> Demo</a>
-                        <a href="${item.codeURL}" target="_blank"><i class="fa-solid fa-laptop-code"></i> Code</a>
+                        ${item.codeURL && item.codeURL !== '#' ? `<a href="${item.codeURL}" target="_blank"><i class="fa-solid fa-laptop-code"></i> Code</a>` : ''}
                     </div>
                 </div>
                 <div class="project-info">
@@ -80,7 +80,7 @@ function renderCards(container, list) {
                     <img class="project-img" src="${item.img}" alt="${item.title}" loading="lazy">
                     <div class="project-overlay">
                         <a href="${item.demo}" target="_blank"><i class="fa-solid fa-link"></i> Demo</a>
-                        <a href="${item.codeURL}" target="_blank"><i class="fa-solid fa-laptop-code"></i> Code</a>
+                        ${item.codeURL && item.codeURL !== '#' ? `<a href="${item.codeURL}" target="_blank"><i class="fa-solid fa-laptop-code"></i> Code</a>` : ''}
                     </div>
                 </div>
                 <div class="project-info">
