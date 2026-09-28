@@ -48,7 +48,8 @@
             <li><a class="nav-link-custom active" href="#home">Home</a></li>
             <li><a class="nav-link-custom" href="#about">About</a></li>
             <li><a class="nav-link-custom" href="#projects">Projects</a></li>
-            <li><a class="nav-link-custom" href="#assignments">Assignments</a></li>
+            <li><a class="nav-link-custom" href="#gallery">Small Projects Gallery</a></li>
+            <li><a class="nav-link-custom" href="#linkedin-feed">LinkedIn</a></li>
             <li><a class="nav-link-custom" href="#contact">Contact</a></li>
         </ul>
         <div class="nav-actions">
@@ -66,6 +67,10 @@
     <!-- ^====== Hero Section ====== -->
     <section id="home" class="hero-section">
         <div class="container hero-content">
+            <div class="available-badge">
+                <span class="available-dot"></span>
+                Available for work
+            </div>
             <div class="hero-badge glass-pill">
                 <i class="fa-solid fa-code"></i>
                 Full Stack Developer
@@ -81,11 +86,24 @@
                     <i class="fa-solid fa-envelope"></i>
                     Get In Touch
                 </a>
+                <button onclick="window.print()" class="glass-btn">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    Download CV
+                </button>
             </div>
             <div class="hero-socials">
                 <a href="https://github.com/AhmedSherif23" target="_blank" class="social-pill" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank" class="social-pill" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="mailto:ahmedsherif@example.com" class="social-pill" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/ahmedsh23" target="_blank" class="social-pill" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/share/1DVZyf1tBk/?mibextid=wwXIfr" target="_blank" class="social-pill" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ahmedshr1f" target="_blank" class="social-pill" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.link/outsgi" target="_blank" class="social-pill" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:Ahmsherif23@gmail.com" class="social-pill" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat"><span class="stat-num">12+</span><span class="stat-label">Assignments</span></div>
+                <div class="hero-stat"><span class="stat-num">1</span><span class="stat-label">Real-world App</span></div>
+                <div class="hero-stat"><span class="stat-num">MERN</span><span class="stat-label">Stack</span></div>
+                <div class="hero-stat"><span class="stat-num">2</span><span class="stat-label">React Exams</span></div>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -106,7 +124,7 @@
                         <div class="avatar-wrap">
                             <div class="avatar-ring"></div>
                             <div class="avatar">
-                                <span>AS</span>
+                                <img src="https://media.base44.com/images/public/6abaa245f0f2163c0736f2e7/75f191743_WhatsAppImage2026-09-28at81342PM.jpeg" alt="Ahmed Sherif" />
                             </div>
                         </div>
                     </div>
@@ -143,25 +161,46 @@
         </div>
     </section>
 
-    <!-- ^====== Assignments Section ====== -->
-    <section id="assignments" class="section">
+    <!-- ^====== Projects Gallery Section ====== -->
+    <section id="gallery" class="section">
         <div class="container">
             <div class="section-head">
-                <h2>Assignments</h2>
-                <p class="section-sub">Learning projects from Route Academy</p>
+                <h2>Small Projects Gallery</h2>
+                <p class="section-sub">A visual tour of my portfolio projects</p>
             </div>
-            <div id="routeassiContainer" class="projects-grid"></div>
+            <div id="galleryContainer" class="projects-grid"></div>
         </div>
     </section>
 
-    <!-- ^====== Exams Section ====== -->
-    <section id="exams" class="section">
+    <!-- ^====== LinkedIn Feed Preview ====== -->
+    <section id="linkedin-feed" class="section">
         <div class="container">
             <div class="section-head">
-                <h2>Exams</h2>
-                <p class="section-sub">Timed builds that tested my skills</p>
+                <h2>Latest from LinkedIn</h2>
+                <p class="section-sub">My professional updates and activity</p>
             </div>
-            <div id="examsContainer" class="projects-grid"></div>
+            <div class="glass-card linkedin-feed-card float-anim">
+                <div class="linkedin-feed-header">
+                    <div class="linkedin-avatar">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="linkedin-feed-info">
+                        <h4>Ahmed Sherif</h4>
+                        <p>Full Stack Developer &middot; MERN Stack</p>
+                    </div>
+                    <a href="https://www.linkedin.com/in/ahmedsh23" target="_blank" class="linkedin-follow-btn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        Visit Profile
+                    </a>
+                </div>
+                <div class="linkedin-feed-body">
+                    <p>Check out my latest posts, projects, and professional updates on LinkedIn. I regularly share insights on web development, React, and building real-world applications.</p>
+                </div>
+                <a href="https://www.linkedin.com/in/ahmedsh23/recent-activity/all/" target="_blank" class="glass-btn glass-btn-primary linkedin-view-posts-btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    View My Latest Posts
+                </a>
+            </div>
         </div>
     </section>
 
@@ -179,16 +218,57 @@
                         <i class="fa-brands fa-github"></i>
                         <span>GitHub</span>
                     </a>
-                    <a href="https://www.linkedin.com/" target="_blank" class="contact-pill">
+                    <a href="https://www.linkedin.com/in/ahmedsh23" target="_blank" class="contact-pill">
                         <i class="fa-brands fa-linkedin-in"></i>
                         <span>LinkedIn</span>
                     </a>
-                    <a href="mailto:ahmedsherif@example.com" class="contact-pill">
+                    <a href="https://www.facebook.com/share/1DVZyf1tBk/?mibextid=wwXIfr" target="_blank" class="contact-pill">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/ahmedshr1f" target="_blank" class="contact-pill">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://wa.link/outsgi" target="_blank" class="contact-pill">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="mailto:Ahmsherif23@gmail.com" class="contact-pill">
                         <i class="fa-solid fa-envelope"></i>
                         <span>Email</span>
                     </a>
                 </div>
+                <a href="mailto:Ahmsherif23@gmail.com" class="glass-btn glass-btn-primary hire-me-btn">
+                    <i class="fa-solid fa-handshake"></i>
+                    Hire Me
+                </a>
             </div>
+            <form id="contactForm" class="glass-card contact-form">
+                <h4 class="contact-form-title">Send Me a Message</h4>
+                <div class="contact-form-grid">
+                    <div class="form-field">
+                        <input type="text" id="cf-name" name="name" placeholder=" " required>
+                        <label for="cf-name">Your Name</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" id="cf-email" name="email" placeholder=" " required>
+                        <label for="cf-email">Your Email</label>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <input type="text" id="cf-subject" name="subject" placeholder=" " required>
+                    <label for="cf-subject">Subject</label>
+                </div>
+                <div class="form-field">
+                    <textarea id="cf-message" name="message" rows="4" placeholder=" " required></textarea>
+                    <label for="cf-message">Message</label>
+                </div>
+                <button type="submit" class="glass-btn glass-btn-primary contact-form-submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
         </div>
     </section>
 
