@@ -1,63 +1,192 @@
-// ?=============== HTML ELEMENT ===============
+// ?=============== HTML ELEMENTS ===============
+const projectsContainer = document.querySelector('#projectsContainer');
 const routeassiContainer = document.querySelector('#routeassiContainer');
 const examsContainer = document.querySelector('#examsContainer');
-const reactProjectsContainer = document.querySelector('#ReactProjects');
 
-// ^=============== APP VARIABLES ===============
-let codeURL = 'https://github.com/AhmedSherif23/Route-FullStack-Diploma';
+// ^=============== DATA ===============
 
+// --- Projects (featured / real-world) ---
+let projectsList = [
+    {
+        title: 'Apartinvestments Hub',
+        desc: 'A real estate investment management platform built on Base44 with dark/light mode, liquid glass UI, and custom dashboards.',
+        img: null,
+        featured: true,
+        icon: 'fa-building',
+        tags: ['Base44', 'Full Stack', 'Dashboard', 'Liquid Glass'],
+        demo: '#',
+        codeURL: '#',
+    },
+    {
+        title: 'Start Framework',
+        desc: 'A React portfolio template built with Bootstrap and smooth animations.',
+        img: './AhmedSherif C43 React Assignment 1 [Start FrameWork]/output.png',
+        tags: ['React', 'Bootstrap'],
+        demo: 'https://start-framework-seven-tau.vercel.app/',
+        codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/e3c5bf3ea56fa53e6525215c26f451b27d332431/AhmedSherif%20C43%20React%20Assignment%201%20%5BStart%20FrameWork%5D',
+    },
+    {
+        title: 'Fresh Cart',
+        desc: 'A full e-commerce platform built with React — product catalog, cart, checkout, and auth.',
+        img: './AhmedSherif C43 React Exam - Fresh Cart/output.png',
+        tags: ['React', 'E-commerce', 'API'],
+        demo: 'https://fresh-cart-gamma-five.vercel.app/',
+        codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20React%20Exam%20-%20Fresh%20Cart',
+    },
+];
+
+// --- Assignments ---
 let assignmentsList = [
-    { title: 'Assignment-01 [First HTML]', demo: './AhmedSherif C43 Assignment 1 [First HTML]/index.html', img: './AhmedSherif C43 Assignment 1 [First HTML]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%201%20%5BFirst%20HTML%5D" },
-    { title: 'Assignment-02 [User Form]', demo: '././AhmedSherif C43 Assignment 2 [UserForm]/index.html', img: './AhmedSherif C43 Assignment 2 [UserForm]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%202%20%5BUserForm%5D" },
-    { title: 'Assignment-03 [Bakery Template]', demo: './AhmedSherif C43 Assignment 3 [Bakery Template]/index.html', img: './AhmedSherif C43 Assignment 3 [Bakery Template]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%203%20%5BBakery%20Template%5D" },
-    { title: 'Assignment-04 [Fokir Template]', demo: './AhmedSherif C43 Assignment 4 [Fokir]/index.html', img: './AhmedSherif C43 Assignment 4 [Fokir]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%204%20%5BFokir%5D" },
-    { title: 'Assignment-05 [Mealify Template]', demo: './AhmedSherif C43 Assignment 5 [Mealify]/index.html', img: './AhmedSherif C43 Assignment 5 [Mealify]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%205%20%5BMealify%5D" },
-    { title: 'Assignment-06 [DevFolio Template]', demo: './AhmedSherif C43 Assignment 6 [DevFolio]/index.html', img: './AhmedSherif C43 Assignment 6 [DevFolio]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%206%20%5BDevFolio%5D" },
-    { title: 'Assignment-07 [First JS]', demo: './AhmedSherif C43 Assignment 7 [First JS]/index.html', img: './AhmedSherif C43 Assignment 7 [First JS]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%207%20%5BFirst%20JS%5D" },
-    { title: 'Assignment-08 [Random Quote JS & JSON]', demo: './AhmedSherif C43 Assignment 8 [Quote JS&JSON]/index.html', img: './AhmedSherif C43 Assignment 8 [Quote JS&JSON]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%208%20%5BQuote%20JS%26JSON%5D" },
-    { title: 'Assignment-09 [Bookmarker JS & LocalStorage]', demo: './AhmedSherif C43 Assignment 9 [BookMarker JS&LocalStorage]/index.html', img: './AhmedSherif C43 Assignment 9 [BookMarker JS&LocalStorage]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%209%20%5BBookMarker%20JS%26LocalStorage%5D" },
-    { title: 'Assignment-10 [Login JS & LocalStorage]', demo: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/index.html', img: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2010%20%5BLogin%20JS%20%26%20LocalStorage%5D" },
-    { title: 'Assignment-11 [Weather App JS]', demo: './AhmedSherif C43 Assignment 11 [Weather App JS]/index.html', img: './AhmedSherif C43 Assignment 11 [Weather App JS]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2011%20%5BWeather%20App%20JS%5D" },
-    { title: 'Assignment-12 [Party Event jQuery]', demo: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/index.html', img: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2012%20%5BParty%20Event%20jQuery%5D" },
+    { title: 'First HTML', desc: 'My first HTML page', demo: './AhmedSherif C43 Assignment 1 [First HTML]/index.html', img: './AhmedSherif C43 Assignment 1 [First HTML]/output.png', tags: ['HTML'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%201%20%5BFirst%20HTML%5D' },
+    { title: 'User Form', desc: 'HTML user form exercise', demo: './AhmedSherif C43 Assignment 2 [UserForm]/index.html', img: './AhmedSherif C43 Assignment 2 [UserForm]/output.png', tags: ['HTML', 'Forms'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%202%20%5BUserForm%5D' },
+    { title: 'Bakery Template', desc: 'A bakery landing page', demo: './AhmedSherif C43 Assignment 3 [Bakery Template]/index.html', img: './AhmedSherif C43 Assignment 3 [Bakery Template]/output.png', tags: ['HTML', 'CSS'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%203%20%5BBakery%20Template%5D' },
+    { title: 'Fokir Template', desc: 'A personal portfolio template', demo: './AhmedSherif C43 Assignment 4 [Fokir]/index.html', img: './AhmedSherif C43 Assignment 4 [Fokir]/output.png', tags: ['HTML', 'CSS'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%204%20%5BFokir%5D' },
+    { title: 'Mealify Template', desc: 'A restaurant landing page', demo: './AhmedSherif C43 Assignment 5 [Mealify]/index.html', img: './AhmedSherif C43 Assignment 5 [Mealify]/output.png', tags: ['HTML', 'CSS'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%205%20%5BMealify%5D' },
+    { title: 'DevFolio Template', desc: 'A developer portfolio template', demo: './AhmedSherif C43 Assignment 6 [DevFolio]/index.html', img: './AhmedSherif C43 Assignment 6 [DevFolio]/output.png', tags: ['HTML', 'CSS'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%206%20%5BDevFolio%5D' },
+    { title: 'First JS', desc: 'Intro to JavaScript', demo: './AhmedSherif C43 Assignment 7 [First JS]/index.html', img: './AhmedSherif C43 Assignment 7 [First JS]/output.png', tags: ['JavaScript'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%207%20%5BFirst%20JS%5D' },
+    { title: 'Random Quote', desc: 'Quote generator with JS & JSON', demo: './AhmedSherif C43 Assignment 8 [Quote JS&JSON]/index.html', img: './AhmedSherif C43 Assignment 8 [Quote JS&JSON]/output.png', tags: ['JavaScript', 'JSON'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%208%20%5BQuote%20JS%26JSON%5D' },
+    { title: 'Bookmarker', desc: 'Bookmark manager with LocalStorage', demo: './AhmedSherif C43 Assignment 9 [BookMarker JS&LocalStorage]/index.html', img: './AhmedSherif C43 Assignment 9 [BookMarker JS&LocalStorage]/output.png', tags: ['JavaScript', 'LocalStorage'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%209%20%5BBookMarker%20JS%26LocalStorage%5D' },
+    { title: 'Login System', desc: 'Login with JS & LocalStorage', demo: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/index.html', img: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/output.png', tags: ['JavaScript', 'Auth'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2010%20%5BLogin%20JS%20%26%20LocalStorage%5D' },
+    { title: 'Weather App', desc: 'Weather app using a public API', demo: './AhmedSherif C43 Assignment 11 [Weather App JS]/index.html', img: './AhmedSherif C43 Assignment 11 [Weather App JS]/output.png', tags: ['JavaScript', 'API'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2011%20%5BWeather%20App%20JS%5D' },
+    { title: 'Party Event', desc: 'Event page with jQuery', demo: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/index.html', img: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/output.png', tags: ['jQuery'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2012%20%5BParty%20Event%20jQuery%5D' },
 ];
+
+// --- Exams ---
 let examsList = [
-    { title: 'Bootstrap-Exam [Daniels Template]', demo: './AhmedSherif C43 Exam 1 [Daniels]/index.html', img: './AhmedSherif C43 Exam 1 [Daniels]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Exam%201%20%5BDaniels%5D" },
-    { title: 'JavaScript & jQuery-Exam [Yummy]', demo: './AhmedSherif C43 Exam 2 [Yummy]/index.html', img: './AhmedSherif C43 Exam 2 [Yummy]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Exam%202%20%5BYummy%5D" },
+    { title: 'Daniels Template', desc: 'Bootstrap exam — Daniels portfolio', demo: './AhmedSherif C43 Exam 1 [Daniels]/index.html', img: './AhmedSherif C43 Exam 1 [Daniels]/output.png', tags: ['Bootstrap', 'Exam'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Exam%201%20%5BDaniels%5D' },
+    { title: 'Yummy', desc: 'JS & jQuery exam — Yummy restaurant', demo: './AhmedSherif C43 Exam 2 [Yummy]/index.html', img: './AhmedSherif C43 Exam 2 [Yummy]/output.png', tags: ['JavaScript', 'jQuery', 'Exam'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Exam%202%20%5BYummy%5D' },
 ];
 
-let assignmentsReact = [
-    { title: 'START FRAMEWORK', demo: 'https://start-framework-seven-tau.vercel.app/', img: './AhmedSherif C43 React Assignment 1 [Start FrameWork]/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/e3c5bf3ea56fa53e6525215c26f451b27d332431/AhmedSherif%20C43%20React%20Assignment%201%20%5BStart%20FrameWork%5D" },
-    { title: 'Fresh Cart', demo: 'https://fresh-cart-gamma-five.vercel.app/', img: './AhmedSherif C43 React Exam - Fresh Cart/output.png', codeURL: "https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20React%20Exam%20-%20Fresh%20Cart" },
-];
-
-// ^=============== JS FUNCTIONS ===============
-function display(conteniarEl, list) {
-    let contant = '';
-    list.forEach(element => {
-        contant += `
-        <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="inner position-relative ">
-            <img class="img-fluid rounded  " src="${element.img}" alt="project img">
-            <div
-                class="content rounded  p-2 d-flex  flex-column justify-content-around align-items-center  position-absolute w-100 h-100 top-0 start-0">
-                <h5 class="fs-5 text-center">${element.title}</h5>
-                <div class="w-100 d-flex justify-content-between align-items-center ">
-                    <a class="btn btn-custom btn-sm  mx-auto mt-2" target="_blank" href="${element.demo}"><i
-                            class="fa-solid fa-link"></i>
-                        demo
-                    </a>
-                    <a class="btn btn-custom btn-sm  mx-auto mt-2" target="_blank" href="${element.codeURL}"><i
-                            class="fa-solid fa-laptop-code"></i>
-                        code
-                    </a>
+// ^=============== RENDER CARDS ===============
+function renderCards(container, list) {
+    let html = '';
+    list.forEach((item, i) => {
+        const delay = (i % 4) * 0.1;
+        if (item.featured) {
+            html += `
+            <div class="project-card featured reveal" style="animation-delay:${delay}s">
+                <div class="project-img-wrap">
+                    <i class="fa-solid ${item.icon || 'fa-star'} featured-icon"></i>
+                    <div class="project-overlay">
+                        <a href="${item.demo}" target="_blank"><i class="fa-solid fa-link"></i> Demo</a>
+                        <a href="${item.codeURL}" target="_blank"><i class="fa-solid fa-laptop-code"></i> Code</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>`
+                <div class="project-info">
+                    <h5>${item.title}</h5>
+                    <p>${item.desc}</p>
+                    <div class="project-tags">
+                        ${(item.tags || []).map(t => `<span>${t}</span>`).join('')}
+                    </div>
+                </div>
+            </div>`;
+        } else {
+            html += `
+            <div class="project-card reveal" style="animation-delay:${delay}s">
+                <div class="project-img-wrap">
+                    <img class="project-img" src="${item.img}" alt="${item.title}" loading="lazy">
+                    <div class="project-overlay">
+                        <a href="${item.demo}" target="_blank"><i class="fa-solid fa-link"></i> Demo</a>
+                        <a href="${item.codeURL}" target="_blank"><i class="fa-solid fa-laptop-code"></i> Code</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h5>${item.title}</h5>
+                    <p>${item.desc || ''}</p>
+                    <div class="project-tags">
+                        ${(item.tags || []).map(t => `<span>${t}</span>`).join('')}
+                    </div>
+                </div>
+            </div>`;
+        }
     });
-    conteniarEl.innerHTML = contant;
+    container.innerHTML = html;
 }
 
-display(routeassiContainer, assignmentsList);
-display(examsContainer, examsList);
-display(reactProjectsContainer, assignmentsReact);
+renderCards(projectsContainer, projectsList);
+renderCards(routeassiContainer, assignmentsList);
+renderCards(examsContainer, examsList);
+
+// ^=============== THEME TOGGLE ===============
+const themeToggle = document.getElementById('themeToggle');
+const root = document.documentElement;
+
+function getStoredTheme() {
+    return localStorage.getItem('portfolio-theme') || 'dark';
+}
+
+function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    const icon = themeToggle.querySelector('i');
+    icon.className = theme === 'dark' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+    localStorage.setItem('portfolio-theme', theme);
+}
+
+applyTheme(getStoredTheme());
+
+themeToggle.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme');
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+});
+
+// ^=============== MOBILE MENU ===============
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+
+mobileToggle.addEventListener('click', () => {
+    mobileToggle.classList.toggle('open');
+    navLinks.classList.toggle('open');
+});
+
+// Close mobile menu on link click
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileToggle.classList.remove('open');
+        navLinks.classList.remove('open');
+    });
+});
+
+// ^=============== NAVBAR SCROLL EFFECT ===============
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
+
+// ^=============== ACTIVE NAV LINK ON SCROLL ===============
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nav-link-custom');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+        }
+    });
+    navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === '#' + current) {
+            item.classList.add('active');
+        }
+    });
+});
+
+// ^=============== SCROLL REVEAL ===============
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+revealEls.forEach(el => observer.observe(el));
+
+// ^=============== FOOTER YEAR ===============
+document.getElementById('year').textContent = new Date().getFullYear();
