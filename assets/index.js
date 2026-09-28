@@ -1,7 +1,6 @@
 // ?=============== HTML ELEMENTS ===============
 const projectsContainer = document.querySelector('#projectsContainer');
 const routeassiContainer = document.querySelector('#routeassiContainer');
-const examsContainer = document.querySelector('#examsContainer');
 
 // ^=============== DATA ===============
 
@@ -48,10 +47,6 @@ let assignmentsList = [
     { title: 'Login System', desc: 'Login with JS & LocalStorage', demo: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/index.html', img: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/output.png', tags: ['JavaScript', 'Auth'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2010%20%5BLogin%20JS%20%26%20LocalStorage%5D' },
     { title: 'Weather App', desc: 'Weather app using a public API', demo: './AhmedSherif C43 Assignment 11 [Weather App JS]/index.html', img: './AhmedSherif C43 Assignment 11 [Weather App JS]/output.png', tags: ['JavaScript', 'API'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2011%20%5BWeather%20App%20JS%5D' },
     { title: 'Party Event', desc: 'Event page with jQuery', demo: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/index.html', img: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/output.png', tags: ['jQuery'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Assignment%2012%20%5BParty%20Event%20jQuery%5D' },
-];
-
-// --- Exams ---
-let examsList = [
     { title: 'Daniels Template', desc: 'Bootstrap exam — Daniels portfolio', demo: './AhmedSherif C43 Exam 1 [Daniels]/index.html', img: './AhmedSherif C43 Exam 1 [Daniels]/output.png', tags: ['Bootstrap', 'Exam'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Exam%201%20%5BDaniels%5D' },
     { title: 'Yummy', desc: 'JS & jQuery exam — Yummy restaurant', demo: './AhmedSherif C43 Exam 2 [Yummy]/index.html', img: './AhmedSherif C43 Exam 2 [Yummy]/output.png', tags: ['JavaScript', 'jQuery', 'Exam'], codeURL: 'https://github.com/AhmedSherif23/Route-FullStack-Diploma/tree/main/AhmedSherif%20C43%20Exam%202%20%5BYummy%5D' },
 ];
@@ -104,7 +99,6 @@ function renderCards(container, list) {
 
 renderCards(projectsContainer, projectsList);
 renderCards(routeassiContainer, assignmentsList);
-renderCards(examsContainer, examsList);
 
 // ^=============== GALLERY ===============
 let galleryList = [
