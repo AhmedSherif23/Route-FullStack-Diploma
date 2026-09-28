@@ -106,6 +106,41 @@ renderCards(projectsContainer, projectsList);
 renderCards(routeassiContainer, assignmentsList);
 renderCards(examsContainer, examsList);
 
+// ^=============== GALLERY ===============
+let galleryList = [
+    { title: 'Start Framework', img: './AhmedSherif C43 React Assignment 1 [Start FrameWork]/output.png', link: 'https://start-framework-seven-tau.vercel.app/' },
+    { title: 'Fresh Cart', img: './AhmedSherif C43 React Exam - Fresh Cart/output.png', link: 'https://fresh-cart-gamma-five.vercel.app/' },
+    { title: 'Daniels Template', img: './AhmedSherif C43 Exam 1 [Daniels]/output.png', link: './AhmedSherif C43 Exam 1 [Daniels]/index.html' },
+    { title: 'Yummy', img: './AhmedSherif C43 Exam 2 [Yummy]/output.png', link: './AhmedSherif C43 Exam 2 [Yummy]/index.html' },
+    { title: 'Bakery Template', img: './AhmedSherif C43 Assignment 3 [Bakery Template]/output.png', link: './AhmedSherif C43 Assignment 3 [Bakery Template]/index.html' },
+    { title: 'Fokir Template', img: './AhmedSherif C43 Assignment 4 [Fokir]/output.png', link: './AhmedSherif C43 Assignment 4 [Fokir]/index.html' },
+    { title: 'Mealify Template', img: './AhmedSherif C43 Assignment 5 [Mealify]/output.png', link: './AhmedSherif C43 Assignment 5 [Mealify]/index.html' },
+    { title: 'DevFolio Template', img: './AhmedSherif C43 Assignment 6 [DevFolio]/output.png', link: './AhmedSherif C43 Assignment 6 [DevFolio]/index.html' },
+    { title: 'Weather App', img: './AhmedSherif C43 Assignment 11 [Weather App JS]/output.png', link: './AhmedSherif C43 Assignment 11 [Weather App JS]/index.html' },
+    { title: 'Bookmarker', img: './AhmedSherif C43 Assignment 9 [BookMarker JS&LocalStorage]/output.png', link: './AhmedSherif C43 Assignment 9 [BookMarker JS&LocalStorage]/index.html' },
+    { title: 'Party Event', img: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/output.png', link: './AhmedSherif C43 Assignment 12 [Party Event jQuery]/index.html' },
+    { title: 'Login System', img: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/output.png', link: './AhmedSherif C43 Assignment 10 [Login JS & LocalStorage]/index.html' },
+];
+
+const galleryContainer = document.querySelector('#galleryContainer');
+
+function renderGallery(container, list) {
+    let html = '';
+    list.forEach((item, i) => {
+        const delay = (i % 4) * 0.1;
+        html += `
+        <a class="gallery-item reveal" href="${item.link}" target="_blank" style="animation-delay:${delay}s">
+            <img src="${item.img}" alt="${item.title}" loading="lazy">
+            <div class="gallery-caption">
+                <span>${item.title}</span>
+            </div>
+        </a>`;
+    });
+    container.innerHTML = html;
+}
+
+renderGallery(galleryContainer, galleryList);
+
 // ^=============== THEME TOGGLE ===============
 const themeToggle = document.getElementById('themeToggle');
 const root = document.documentElement;
