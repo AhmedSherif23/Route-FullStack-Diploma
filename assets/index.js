@@ -8,7 +8,7 @@ let projectsList = [
     {
         title: 'Apartinvestments Hub',
         desc: 'A real estate investment management platform built on Base44 with dark/light mode, liquid glass UI, and custom dashboards.',
-        img: 'https://media.base44.com/images/public/6abaa245f0f2163c0736f2e7/a50db2620_Apartinvestments2809202620_02.png',
+        img: 'https://media.base44.com/images/public/6abaa245f0f2163c0736f2e7/61f7f02e8_image.png',
         featured: false,
         tags: ['Base44', 'Full Stack', 'Dashboard', 'Liquid Glass'],
         demo: '#',
