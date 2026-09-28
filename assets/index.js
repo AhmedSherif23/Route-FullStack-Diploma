@@ -11,7 +11,7 @@ let projectsList = [
         img: 'https://media.base44.com/images/public/6abaa245f0f2163c0736f2e7/61f7f02e8_image.png',
         featured: false,
         tags: ['Base44', 'Full Stack', 'Dashboard', 'Liquid Glass'],
-        demo: '#',
+        demo: 'https://apartinvestments.com/',
         codeURL: '#',
     },
 ];
