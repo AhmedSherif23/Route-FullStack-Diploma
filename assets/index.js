@@ -1,6 +1,5 @@
 // ?=============== HTML ELEMENTS ===============
 const projectsContainer = document.querySelector('#projectsContainer');
-const routeassiContainer = document.querySelector('#routeassiContainer');
 
 // ^=============== DATA ===============
 
@@ -98,7 +97,6 @@ function renderCards(container, list) {
 }
 
 renderCards(projectsContainer, projectsList);
-renderCards(routeassiContainer, assignmentsList);
 
 // ^=============== GALLERY ===============
 let galleryList = [
