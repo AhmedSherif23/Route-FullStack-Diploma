@@ -903,6 +903,95 @@ h1, h2, h3, h5 { font-family: "Alata", sans-serif; font-weight: 400; }
     .linkedin-follow-btn { flex: 1; justify-content: center; }
 }
 
+/* === CONTACT FORM === */
+.contact-form {
+    padding: 32px;
+    margin-top: 28px;
+}
+
+.contact-form-title {
+    font-family: "Alata", sans-serif;
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.contact-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-family: "Roboto", sans-serif;
+    transition: border-color 0.3s, background 0.3s;
+    outline: none;
+    resize: none;
+}
+
+.form-field textarea {
+    min-height: 110px;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: var(--accent-color, #6c5ce7);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.form-field label {
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+
+.form-field input:focus + label,
+.form-field input:not(:placeholder-shown) + label,
+.form-field textarea:focus + label,
+.form-field textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 12px;
+    font-size: 0.72rem;
+    color: var(--accent-color, #6c5ce7);
+    background: var(--glass-bg, rgba(20, 20, 35, 0.85));
+    padding: 0 6px;
+    border-radius: 4px;
+}
+
+.contact-form-submit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+@media (max-width: 576px) {
+    .contact-form-grid { grid-template-columns: 1fr; }
+    .contact-form { padding: 24px 20px; }
+}
+
 /* === CONTACT === */
 .contact-card {
     padding: 48px;

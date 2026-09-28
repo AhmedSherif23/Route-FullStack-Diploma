@@ -244,6 +244,31 @@
                     Hire Me
                 </a>
             </div>
+            <form id="contactForm" class="glass-card contact-form">
+                <h4 class="contact-form-title">Send Me a Message</h4>
+                <div class="contact-form-grid">
+                    <div class="form-field">
+                        <input type="text" id="cf-name" name="name" placeholder=" " required>
+                        <label for="cf-name">Your Name</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" id="cf-email" name="email" placeholder=" " required>
+                        <label for="cf-email">Your Email</label>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <input type="text" id="cf-subject" name="subject" placeholder=" " required>
+                    <label for="cf-subject">Subject</label>
+                </div>
+                <div class="form-field">
+                    <textarea id="cf-message" name="message" rows="4" placeholder=" " required></textarea>
+                    <label for="cf-message">Message</label>
+                </div>
+                <button type="submit" class="glass-btn glass-btn-primary contact-form-submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
         </div>
     </section>
 

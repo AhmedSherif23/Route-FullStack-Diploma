@@ -185,3 +185,18 @@ revealEls.forEach(el => observer.observe(el));
 
 // ^=============== FOOTER YEAR ===============
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// ^=============== CONTACT FORM ===============
+const contactForm = document.getElementById('contactForm');
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('cf-name').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const subject = document.getElementById('cf-subject').value.trim();
+    const message = document.getElementById('cf-message').value.trim();
+
+    const mailtoUrl = `mailto:Ahmsherif23@gmail.com?subject=${encodeURIComponent(`[Portfolio] ${subject}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+    window.location.href = mailtoUrl;
+    contactForm.reset();
+});
